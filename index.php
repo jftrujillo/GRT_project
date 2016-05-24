@@ -47,98 +47,71 @@
 	</div>	
 	<!--END OF TERMS OF USE-->	
 		
-		<header>
-			<div class="container">
+	<header>
+		<div class="container">
 
-				<!-- logo -->
-				<div class="logo">
-					<a href="">
-						<div class="name_logo">
-							<p> <span class="orange">G</span>ESTIÓN DE REDES</p>
-							<p><span class="green">D</span>E TELECOMUNICACIONES</p>
-						</div>
-						<div class="picture_logo">
-							<div class="orange_square"></div>
-							<div class="green_square"></div>
-						</div>
-					</a>
-				</div>
-				<!-- logo -->
-
+			<!-- logo -->
+			<div class="logo">
+				<a href="">
+					<div class="name_logo">
+						<p> <span class="orange">G</span>ESTIÓN DE REDES</p>
+						<p><span class="green">D</span>E TELECOMUNICACIONES</p>
+					</div>
+					<div class="picture_logo">
+						<div class="orange_square"></div>
+						<div class="green_square"></div>
+					</div>
+				</a>
 			</div>
-		</header>
+			<!-- logo -->
+
+		</div>
+	</header>
 
 
-		<div id="content">
-			<div class="container container-content">
+	<div id="content">
+			
+		<center>
+				<br><br><br>		
+				<P ALIGN=center><img src="images/logo-universidad-cauca.png" width="150">
+				<br><br>
+				<div>
+					<font color="white">Facultad de Ingenieira electrónica y Telecomunicaciones</font>
+				</div>
 
-				<!-- sidebar -->
-				<aside class="col-md-3 col-xs-12 no_left">
-					<!-- naviguation -->
-					<nav id="nav">
-						<ul>
-							<li class="active">		
-								<a href="inicio.html">
-									<i class="icon-arrow"></i>
-									<span>VOLVER</span>
-									<div class="bg-nav"></div>
-								</a>
-							</li>
-							
-									
-						</ul>
+				<div >
+					<font color="white">Gestión de Redes</font>
+				</div>
 
-						<audio id="nav-sound" preload="auto">
-							<source src="audio/bouton.mp3">
-						</audio>
+				<div style="padding: 10px;">
 
-					</nav>
-					<!-- end naviguation -->
-
-					<div class="bloc ">
-						<h3 class="grey">GESTIÓN DE REDES</h3>
-						<span class="date green">Junio, 2016</span>
-						<p class="grey"> La gestión de red consiste en monitorizar y controlar los recursos de una red con el fin de evitar que esta llegue a funcionar incorrectamente degradando sus prestaciones.</p>
-					</div>
-
-				</aside>
-				<!-- end sidebar -->
-
-				<!-- end content -->
-
-				<div class="col-md-9 col-xs-12 no_right">
+					<h2><a><font color="white" size=6>MONITOREO DE EQUIPOS</font></a></h2>
+					<br><br>
 					
-					<div class="col-md-20 col-xs-12 no_right slider">
-					<h1>MAPA DE LA RED</h1>
-					</div>
-					<div class="row">
-
-						<div class="col-md-20 col-xs-20">
-							<a href="DetallesPC1win.php">
-						  <img src="\GESTIO\GRT_project\images\Win.png" alt="Win_PC1" style="width:200px;height:200px;border:0;">
-						</a>
-						</div>
-
-						<div class="col-md-20 col-xs-12 no_right"">
-						<a href="inicio.html">
-						  <img src="\GESTIO\GRT_project\images\Win.png" alt="Win_PC2" style="width:200px;height:200px;border:0;">
-						</a>	
-						</div>
-
-						
-						
-
-					</div>
+					<form action="inicio.php" method="post">
+				  	
+				  		<font color="white">Usuario:</font>
+				  		<input type="text" name="usuario">
+						<br><br>
+					  	<font color="white">Contraseña:</font>
+						<input type="contrasena" name="contrasena">
+						<br><br>
+						<input type="submit" value="Entrar"
+					</form>	
 
 				</div>
-				<!-- end content -->
 
-			</div>			
-		</div>
+			<br><br>
+
+			
+		</center>	
+	</div>			
+			
 
 
 		<!-- footer -->
 		<footer class="footer">
+			<center>
 			<div class="container">
 				<div class="row">
 

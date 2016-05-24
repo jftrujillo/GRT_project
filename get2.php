@@ -1,10 +1,13 @@
 <!-- Funciones de SNMP en PHP -->
+<?php include("conexion.php");
+ ?>
 <html>
 <head>	
-	<title>CONSULTA SNMP DISPOCITIVO WIN_PC_1</title>
+	<title>CONSULTA SNMP DISPOSITIVO WIN_PC_1</title>
 </head>
 
 <body>
+
 
 <h1 align="center">Grupo: 
 Daniela M. Casas Velasco - Ana Isabel Montoya Muñoz
@@ -12,7 +15,20 @@ Daniela M. Casas Velasco - Ana Isabel Montoya Muñoz
 </h1>
 <BR>
 <BR>
-<?php $ip = "192.168.27.1"?>
+<?php
+
+
+      $query = "SELECT ip FROM red WHERE nombre =  'pc1'"; 
+            //$query2 = "SELECT nombre_usuario FROM usuario WHERE password =  'admin'"; 
+            $result = mysql_query($query, $conexion);
+            //$nombre = mysql_query($query2, $link); 
+            $value = mysql_fetch_array($result);
+            //var_dump($values);
+            $ip=$value['ip'];
+            //echo $ip; ?> <br>
+             
+ 
+     
 
 
 <table border="1" style="width:100%">

@@ -10,8 +10,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Gestión de Redes</title>
 		<!--BEGIN OF TERMS OF USE. DO NOT EDIT OR DELETE THESE LINES. IF YOU EDIT OR DELETE THESE LINES AN ALERT MESSAGE MAY APPEAR WHEN TEMPLATE WILL BE ONLINE-->
-<style>#free-flash-header a,#free-flash-header a:hover {color:#363636;}#free-flash-header a:hover {text-decoration:none}</style>
-<!--END OF TERMS OF USE-->
+		<style>
+			#free-flash-header a,#free-flash-header a:hover{color:#363636;}#free-flash-header a:hover {text-decoration:none}
+		</style>
+		<!--END OF TERMS OF USE-->
 
 		<!-- Bootstrap -->
 		<link href="css/reset.css" rel="stylesheet" type="text/css" media="all">
@@ -28,14 +30,6 @@
 		<link href="css/lightbox/visuallightbox.css" rel="stylesheet" type="text/css" media="all">
 		<link rel="stylesheet" type="text/css" href="css/lightbox/style.css" />
 		<!-- end LightBox -->
-
-
-		<!--[if lt IE 9]>
-		  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-		<![endif]-->
-
-			
 
 	</head>
 	
@@ -80,12 +74,24 @@
 							<li class="active">		
 								<a href="inicio.html">
 									<i class="icon-arrow"></i>
-									<span>VOLVER</span>
+									<span>INICIO</span>
 									<div class="bg-nav"></div>
 								</a>
 							</li>
-							
-									
+							<li>	
+								<a href="mapaStatic.html">
+									<i class="icon-arrow"></i>
+									<span>MAPA DE RED</span>
+									<div class="bg-nav"></div>
+								</a>
+							</li>
+							<li>	
+								<a href="portfolio.html">
+									<i class="icon-arrow"></i>
+									<span>GRÁFICAS</span>
+									<div class="bg-nav"></div>
+								</a>
+							</li>		
 						</ul>
 
 						<audio id="nav-sound" preload="auto">
@@ -105,28 +111,81 @@
 				<!-- end sidebar -->
 
 				<!-- end content -->
-
 				<div class="col-md-9 col-xs-12 no_right">
 					
-					<div class="col-md-20 col-xs-12 no_right slider">
-					<h1>MAPA DE LA RED</h1>
+					<div class="col-md-12 col-xs-12 no_right slider">
+						<div id="wowslider-container1">
+							<div class="ws_images"><ul>
+									<li><img src="images/slider/escudo.jpg" alt="escudo" title="TODOS PODEMOS PROGRAMAR" id="wows1_0" style="width:420px;height:228px; align: center;"/></li>
+									<li><img src="images/slider/your_image2.jpg" alt="GESTIO" title="GESTIO" id="wows1_1"/></li>
+									<li><img src="images/slider/your_image3.jpg" alt="GESTIÓN DE REDES" title="GESTIÓN DE REDES" id="wows1_2"/></li>
+								</ul></div>
+
+							<div class="ws_shadow"></div>
+						</div>
 					</div>
+
+
 					<div class="row">
 
-						<div class="col-md-20 col-xs-20">
-							<a href="DetallesPC1win.php">
-						  <img src="\GESTIO\GRT_project\images\Win.png" alt="Win_PC1" style="width:200px;height:200px;border:0;">
-						</a>
+						<div class="col-md-6 col-xs-12">
+							<article>
+								<h2>¿Qué es GESTIO?</h2>
+								<div>
+									<div class="vlightbox-cont bloc-img">
+										<a class="vlightbox1" href="images/Gestio.jpg" title="GESTIO">
+											<img src="images/thumbs/Gestio.jpg" alt="Gestio"/>
+										</a>
+										<span class="vlb">
+											Caption here
+										</span>
+									</div>
+									<h4 class="green">GESTIO es...</h4>
+									<p> Una herramienta que permite gestionar con MRTG y PHP elementos básicos de red de distintos sistemas operativos bajo el protocolo snmp.</p>	
+
+									
+								</div>
+								
+							</article>
 						</div>
 
-						<div class="col-md-20 col-xs-12 no_right"">
-						<a href="inicio.html">
-						  <img src="\GESTIO\GRT_project\images\Win.png" alt="Win_PC2" style="width:200px;height:200px;border:0;">
-						</a>	
-						</div>
+						<div class="col-md-6 col-xs-12 no_right">
+							<article>
+								<h2>ACERCA DE NOSOTRAS</h2>
+								<div>
+									<div class="vlightbox-cont bloc-img">
+										<a class="vlightbox1" href="images/Ana.jpg" title="about-me">
+											<img src="images/thumbs/Ana.jpg" alt="about-me"/>
+										</a>
+										<span class="vlb">
+											Caption here
+										</span>
+									</div>
+									<h4 class="green">Ana Isabel Montoya M.</h4>
+									<p> Soy estudiante de Décimo semestre de Ingenieria Electronica y Telecomunicaciones de la Universidad del Cauca. 
+									Mis intereses académicos se enfocan en Telemática, Redes Definidas por Software, gestión en redes y Fibra Ópica. 
 
-						
-						
+									Correo:aimontoya@unicauca.edu.co
+									 </p>
+								</div>
+								
+								<div>
+									<div class="vlightbox-cont bloc-img">
+										<a class="vlightbox1" href="images/Daniela.jpg" title="about-me">
+											<img src="images/thumbs/Daniela.jpg" alt="about-me"/>
+										</a>
+										<span class="vlb">
+											Caption here
+										</span>
+									</div>
+									<h4 class="green">Daniela M. Casas Velasco</h4>
+									<p>Soy estudiante de Noveno semestre de Ingeniería Electrónica y Telecomunicaciones, mis intereses académicos se enfocan las Telecomunicaciones, Fibra óptica y Redes Definidas por Software.
+
+									Correo:daniksas@unicauca.edu.co </p>
+								</div>
+
+							</article>
+						</div>
 
 					</div>
 
