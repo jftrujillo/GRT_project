@@ -3,6 +3,13 @@
 <!--[if IE 7]>    <html class="no-js ie7 oldie" lang="fr"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="fr"> <![endif]-->
 <!--[if gt IE 8]> <html class="no-js" lang="fr"> <![endif]-->
+<?
+@session_start();
+php include("conexion.php");
+ ?>
+ 
+<?php include("login.php");
+ ?>
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -34,6 +41,8 @@
 	</head>
 	
 	<body>
+	 
+
 	<div class="page-container">	
 		<!--BEGIN OF TERMS OF USE. DO NOT EDIT OR DELETE THESE LINES. IF YOU EDIT OR DELETE THESE LINES AN ALERT MESSAGE MAY APPEAR WHEN TEMPLATE WILL BE ONLINE-->
 	<div id="copy" style="height: 75px; position: absolute; bottom: 0px; left:0px; border: none; width: 100%;">
@@ -62,7 +71,8 @@
 			</div>
 		</header>
 
-
+			
+		    
 		<div id="content">
 			<div class="container container-content">
 
@@ -71,17 +81,25 @@
 					<!-- naviguation -->
 					<nav id="nav">
 						<ul>
+							
 							<li class="active">		
-								<a href="inicio.html">
+								<a href="inicio.php">
 									<i class="icon-arrow"></i>
 									<span>INICIO</span>
 									<div class="bg-nav"></div>
 								</a>
 							</li>
 							<li>	
-								<a href="mapaStatic.html">
+								<a href="mapa.html">
 									<i class="icon-arrow"></i>
 									<span>MAPA DE RED</span>
+									<div class="bg-nav"></div>
+								</a>
+							</li>
+							<li>	
+								<a href="mapaStatic.html">
+									<i class="icon-arrow"></i>
+									<span>MAPA ESTÁTICO DE RED</span>
 									<div class="bg-nav"></div>
 								</a>
 							</li>
@@ -91,7 +109,8 @@
 									<span>GRÁFICAS</span>
 									<div class="bg-nav"></div>
 								</a>
-							</li>		
+							
+
 						</ul>
 
 						<audio id="nav-sound" preload="auto">
