@@ -1,55 +1,21 @@
-<!DOCTYPE HTML>  
-<html>
-<head>
-</head>
-<body>  
-      <?php
-      
-          ini_set('display_errors','off');
-          ini_set('display_startup_errors', 'off');
-          error_reporting(0);
+<?php
+  
+  $nombre = $_POST['usuario'];
+  $pass = $_POST['contrasena'];
 
-          $usu= $_POST['usuario'];
-          $pass= $_POST['contrasena'];
-          
-          function Conectarse()
-          {
-            if (!($link=mysql_connect('localhost','root'.'password')))
-            {
-              echo "error conectando a la base de datos.";
-              exit();
-            }
-            if (!mysql_select_db('test',$link))
-            {
-              echo "error selecionando base de datos";
-              exit();
-            }
-            return $link;
-          }    
+  $conexion = mysql_connect("localhost", "root") or die ("PROBLEMAS AL CONECTAR EL SERVIDOR");
 
-          $con = Conectarse();
-          $sql= "SELECT * FROM administrador WHERE Usuario ='".$usu."' AND Contrasena = '".$pass."'";
-           
-          $q=mysql_query($sql);
+  mysql_select_db("test", $conexion) or die ("ERROR AL TRATAR DE CONECTAR CON LA BASE DE DATOS");
 
-          try {
+  $estandar = mysql_query("SELECT * FROM Administrador where Usuario = '".$nombre."' and Contrasena = '".$pass."'", $conexion);
 
-            if(mysql_result($q, 0)) 
-          {
-            $result = mysql_result($q, 0);
-            echo " Validación correcta ";
-            
-          }else
-            echo " Usuario o contraseña incorrecta";
-            header('Location: index.php');
-          } catch (Exception $error) {
-            mysql_close($con);
-            
-          }
+   if($row = mysql_fetch_array($estandar)){
 
-          
-        
-          ?>
+    header("Location: inicio.php");
 
-</body>
-</html>
+  }else{
+    //echo("NO PASS");
+    header("Location: error.php");
+  }
+
+?> 

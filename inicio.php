@@ -3,13 +3,8 @@
 <!--[if IE 7]>    <html class="no-js ie7 oldie" lang="fr"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="fr"> <![endif]-->
 <!--[if gt IE 8]> <html class="no-js" lang="fr"> <![endif]-->
-<?
-@session_start();
-php include("conexion.php");
- ?>
  
-<?php include("login.php");
- ?>
+
 <html>
 	<head>
 		<meta charset="utf-8">

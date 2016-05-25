@@ -88,13 +88,13 @@
 					<h2><a><font color="white" size=6>MONITOREO DE EQUIPOS</font></a></h2>
 					<br><br>
 					
-					<form action="inicio.php" method="post" autocomplete="off">
+					<form action="login.php" method="post" autocomplete="off">
 				  	
 				  		<font color="white">Usuario:</font>
-				  		<input type="text" name="usuario"/>
+				  		<input type="text" name="usuario" id="usuario"/>
 						<br><br>
 					  	<font color="white">Contraseña:</font>
-						<input type="password" name="contrasena"/>
+						<input type="password" name="contrasena" id="contrasena"/>
 						<br><br>
 						<input type="submit" value="Entrar"/>
 
